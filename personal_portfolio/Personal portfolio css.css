@@ -1,0 +1,144 @@
+:root{
+  --main-yellow: #D4B440;
+  --main-blue: #425e96;
+  --main-white: #FDF5E6;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  color: var(--main-yellow);
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: Monospace, serif;
+  scroll-behavior: smooth;
+  background: linear-gradient(336deg, rgba(66,94,150,1) 5%, rgba(15,23,46,1) 42%, rgba(3,7,22,1) 72%); 
+}
+
+
+body {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--main-white);
+}
+
+h1, h2{
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: center;
+}
+
+#header-p{
+  color: var(--main-white);
+}
+
+
+.nav{
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 2px 4px 0 rgba(156, 156, 210, 0.76);
+  padding: 2rem;
+  background:  rgba(3,7,22,1) 100%;
+
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  gap: 8em;
+}
+
+a{
+  color: var(--main-white);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--main-blue);
+}
+
+a:visited {
+  color: none;
+}
+
+.navlist > li{
+  font-size: 20px;
+  justify-content: space-evenly;
+}
+
+.welcome-section{
+  text-align: center;
+  position: relative;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+
+.project-header{
+  display: block;
+  margin-bottom: 5rem;
+
+}
+
+.project-title{
+  font-size: 2rem;
+  color: var(--main-white);
+}
+
+.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+ img {
+  border-style: inset;
+  width: 45vh;
+  margin: 1rem;
+}
+
+.contact{
+  display: block;
+  padding: 2rem 0;
+  justify-content: center;
+
+}
+
+.contact > h2{
+  border-style: inset;
+  border-radius: 20px;
+  margin: 1rem;
+}
+
+.contact-links{
+  display: flex;
+  justify-content: space-evenly;
+  
+}

@@ -1,0 +1,81 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+html{
+  text-align: center;
+}
+
+h1{
+  font-size: 50px;
+  font-family: Monospace, Helvetica;
+}
+
+#title-p{
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+body {
+  color: #cfcfec;
+  font-family: Monospace, Helvetica;
+  margin: 0;
+}
+
+a{
+  color:  #cfcfec;
+  font-size: 12px;
+}
+
+main{
+  margin: 0;
+  padding: 10px;
+  background: linear-gradient(360deg, rgba(2,0,36,1) 30%, rgba(88,88,131,1) 100%);
+}
+
+figure{
+  display: block;
+  margin: 1em;
+  justify-content: center;
+}
+
+figure figcaption{
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+}
+
+#image{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+#headline{
+  font-size: 24px;
+  text-align: center;
+}
+
+h3{
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+ul{
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.5;
+}
+
+#ending{
+  padding-top: 10px;
+  font-size: 12px;
+  text-align: center;
+}
