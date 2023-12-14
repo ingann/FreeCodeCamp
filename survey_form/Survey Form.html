@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title> Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title"> Survey Form</h1>
+    <p id="description"> Thank you for taking the time to help us improve the platform </p>
+    <form id="survey-form" method="post" action="https://survey-form.freecodecamp.rocks">
+       <fieldset>
+        <label id="name-label"> Name <input placeholder="Enter your name" id="name" type="text" required/>
+        </label>
+        <label id="email-label"> Email <input placeholder="Enter your email" id="email" type="email" required/>
+        </label>
+        <label id="number-label"> Age (optional) <input id="number" type="number" min="13" max="120" placeholder="Age" />
+        </label>
+        <label> Which option best describes your current role?
+          <select id="dropdown">
+            <option value=""> Select an option</option>
+            <option value="1">Student</option>
+            <option value="2">Full time job</option>
+            <option value="3">Full time learner</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label> Would you recommend company to a friend? <label for="agree"> Agree<input id="agree" type="radio" name="recommend" value="agree" /></label>
+        <label for="not-sure">Not sure<input id="not-sure" type="radio" value="not-sure" name="recommend" /></label>
+        <label for="disagree"> Disagree<input id="disagree" type="radio" value="disagree" name="recommend" /></label>
+        </label>
+        <label id="improve"> What would you like to see improved? (Check all that apply)<label for="challenges"><input id="challenges" type="checkbox" name="improve" value="challenges"/>Challenges</label>
+        <label for="projects"><input id="projects" name="improve" type="checkbox" value="projects" />Projects</label>
+        <label for="videos"><input id="videos" name="improve" type="checkbox" value="videos"/>Videos</label>
+        <label for="forum"><input id="forum" name="improve" type="checkbox" value="forum" />Forum</label>
+        <label for="help-rooms"><input id="help-rooms" name="improve" type="checkbox" value="help-rooms" />Help rooms </label>
+       </label>
+      </fieldset>
+      <label for="comments">Any comments or suggestions? <textarea id="comments" rows="5" cols="40" name="comments" placeholder="Enter your comment here..."></textarea>
+      </label>
+      <input id="submit" type="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
